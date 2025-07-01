@@ -1,5 +1,6 @@
 :root {
     --main-color: rgb(122, 0, 75);
+    --text-bg-color-light: rgb(240, 235, 235);
     --text-bg-color: rgb(235, 225, 225);
     --page-bg-color: rgb(200, 190, 190);
     --highlight-text: rgb(133, 143, 247);
@@ -7,7 +8,7 @@
 }
 
 body {
-    font-family: 'Ubuntu', 'Corbel', sans-serif;
+    font-family: "Ubuntu", "Corbel", sans-serif;
     font-weight: 400;
     width: 95%;
     margin-left: auto;
@@ -27,6 +28,11 @@ h2 {
     margin-bottom: 0px;
 }
 
+h4 {
+    margin-top: 0.3rem;
+    margin-bottom: 0.2rem;
+}
+
 nav {
     background: var(--main-color);
     border-radius: 5px;
@@ -37,7 +43,6 @@ nav {
     flex-wrap: wrap;
     box-shadow: 1px 1px 3px rgb(100, 0, 60);
 }
-
 
 blockquote {
     text-align: center;
@@ -57,32 +62,17 @@ blockquote {
 
 section {
     margin-top: 2px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     background-color: var(--text-bg-color);
     clear: both;
-    padding: 20px;
+    padding: 1.5rem;
     border-radius: 5px;
     gap: 1rem;
     box-shadow: 1px 1px 3px var(--main-color);
     overflow: hidden;
 }
 
-.block {
-    float: left;
-    list-style: none;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 3px;
-    border-color: var(--page-bg-color);
-    height: auto;
-    width: 5rem;
-    text-align: center;
-    margin: 1rem;
-    padding: 1rem;
-}
-
 a:link {
-
 }
 
 a:visited {
@@ -94,7 +84,7 @@ a:visited {
 .regular-link {
     color: hotpink;
     text-decoration: none;
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 .nav-link {
@@ -127,4 +117,48 @@ mark {
     color: var(--highlight-text);
     background: none;
     font-weight: bold;
+}
+
+.flex-container {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    margin: 0px;
+    padding-left: 0rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-item {
+    background-color: var(--text-bg-color-light);
+    float: left;
+    list-style: none;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    border-color: var(--page-bg-color);
+    width: 22%;
+    min-height: 6rem;
+    text-align: center;
+    align-content: center;
+    padding: 1rem;
+    margin: 0.5vw;
+}
+
+details {
+    background-color: var(--text-bg-color-light);
+    cursor: pointer;
+    padding: 1rem;
+    width: auto;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: 0.1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+details:hover {
+    color: var(--highlight-link);
 }
