@@ -3,7 +3,7 @@
     --text-bg-color-light: rgb(240, 235, 235);
     --text-bg-color: rgb(235, 225, 225);
     --page-bg-color: rgb(200, 190, 190);
-    --highlight-text: rgb(133, 143, 247);
+    --highlight-text: rgb(59, 70, 194);
     --highlight-link: hotpink;
 }
 
@@ -28,9 +28,18 @@ h2 {
     margin-bottom: 0px;
 }
 
+h3 {
+    margin-top: 0.3rem;
+    margin-bottom: 0.2rem;
+}
+
 h4 {
     margin-top: 0.3rem;
     margin-bottom: 0.2rem;
+}
+
+.inboxheadline {
+    font-size: 1.1rem;
 }
 
 nav {
@@ -76,13 +85,13 @@ a:link {
 }
 
 a:visited {
-    color: hotpink;
+    color: rgb(221, 4, 113);
     text-decoration: none;
     font-weight: bold;
 }
 
 .regular-link {
-    color: hotpink;
+    color: rgb(221, 4, 113);
     text-decoration: none;
     font-weight: bold;
 }
